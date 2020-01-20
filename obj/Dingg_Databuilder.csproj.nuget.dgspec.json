@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\IvanJandric\\Documents\\Dingg_Databuilder\\Dingg_Databuilder.csproj": {}
+    "C:\\Users\\IvanJandric\\Documents\\Dingg\\Dingg_Databuilder\\Dingg_Databuilder.csproj": {}
   },
   "projects": {
-    "C:\\Users\\IvanJandric\\Documents\\Dingg_Databuilder\\Dingg_Databuilder.csproj": {
+    "C:\\Users\\IvanJandric\\Documents\\Dingg\\Dingg_Databuilder\\Dingg_Databuilder.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\IvanJandric\\Documents\\Dingg_Databuilder\\Dingg_Databuilder.csproj",
+        "projectUniqueName": "C:\\Users\\IvanJandric\\Documents\\Dingg\\Dingg_Databuilder\\Dingg_Databuilder.csproj",
         "projectName": "Dingg_Databuilder",
-        "projectPath": "C:\\Users\\IvanJandric\\Documents\\Dingg_Databuilder\\Dingg_Databuilder.csproj",
+        "projectPath": "C:\\Users\\IvanJandric\\Documents\\Dingg\\Dingg_Databuilder\\Dingg_Databuilder.csproj",
         "packagesPath": "C:\\Users\\IvanJandric\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\IvanJandric\\Documents\\Dingg_Databuilder\\obj\\",
+        "outputPath": "C:\\Users\\IvanJandric\\Documents\\Dingg\\Dingg_Databuilder\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\IvanJandric\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -35,6 +35,12 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "dependencies": {
+            "Neo4j.Driver": {
+              "target": "Package",
+              "version": "(, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
