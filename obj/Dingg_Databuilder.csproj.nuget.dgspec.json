@@ -36,9 +36,13 @@
       "frameworks": {
         "netcoreapp3.1": {
           "dependencies": {
+            "CsvHelper": {
+              "target": "Package",
+              "version": "[13.0.0, )"
+            },
             "Neo4j.Driver": {
               "target": "Package",
-              "version": "(, )"
+              "version": "[4.0.0, )"
             }
           },
           "imports": [
