@@ -35,8 +35,15 @@ namespace Dingg_Databuilder
             Console.WriteLine("👌 Dingg Databuilder 👌");
 
             Console.WriteLine("Loading categories");
-            var CategoryCSV = new Extractors.CSV.Category(".\\Data\\Category.csv");
-            CategoryCSV.Extract();
+            var CategoryCSV = new Extractors.CSV<Models.Category>(".\\Data\\Category.csv");
+            
+            //TESTING; TODO
+            foreach (var record in CategoryCSV.Extract()) {
+                Console.WriteLine(record.Name);
+            }
+            
+            
+
 
             //Build().Wait();
             // TODO: Make a model for importing i guess

@@ -1,19 +1,21 @@
 using System.Globalization;
+using System.Collections.Generic;
 using System.IO;
 using CsvHelper;
+using System.Linq;
 
-namespace Dingg_Databuilder.Extractors.CSV
+namespace Dingg_Databuilder.Extractors
 {
-    public class Category
+    public class CSV<Model>
     {
         private string _path;
 
-        public Category(string path)
+        public CSV(string path)
         {
             this._path = path;
         }
 
-        public void Extract()
+        public Model[] Extract()
         {
             // LEARNING: Using statement is an alternative to try-catch block. What it does it automatically disposes
             //           the Disposable object once the block is finished or the exception occured.
@@ -22,13 +24,7 @@ namespace Dingg_Databuilder.Extractors.CSV
                 using (var csv = new CsvReader(reader, CultureInfo.InvariantCulture))
                 {
                     csv.Configuration.PrepareHeaderForMatch = (string header, int idex) => header.ToLower();
-                    var records = csv.GetRecords<Models.Category>();
-                    return records;
-                    /*foreach (var record in records)
-                    {
-                        // TODO: Remove this and add proper return for this shit :)
-                        System.Console.WriteLine($"Name: {record.Name}, Popularity: {record.Popularity}");
-                    }*/
+                    return csv.GetRecords<Model>().ToArray();
                 }
             }
         }
