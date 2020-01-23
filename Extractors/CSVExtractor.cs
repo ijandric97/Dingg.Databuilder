@@ -6,6 +6,10 @@ using System.Linq;
 
 namespace Dingg_Databuilder.Extractors
 {
+    /// <summary>
+    /// A generic CSV (with header) extractor. Extracts the data into an array of Model.
+    /// </summary>
+    /// <typeparam name="Model">A CsvHelper model. The model should match the CSV header we are trying to parse.</typeparam>
     public class CSV<Model>
     {
         private string _path;
