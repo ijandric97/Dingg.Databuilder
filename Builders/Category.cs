@@ -1,4 +1,13 @@
-static async Task<int> Build()
+
+using System;
+using System.Threading.Tasks;
+using Neo4j.Driver;
+
+namespace Dingg_Databuilder.Builders
+{
+    class Category
+    {
+        static async Task<int> Build()
         {
             IDriver driver = GraphDatabase.Driver("bolt://localhost:7687", AuthTokens.Basic("neo4j", "test"));
             IAsyncSession session = driver.AsyncSession();
@@ -17,3 +26,5 @@ static async Task<int> Build()
             Console.WriteLine("Built :)");
             return 0;
         }
+    }
+}
