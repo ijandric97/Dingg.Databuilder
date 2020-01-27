@@ -3690,24 +3690,26 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\IvanJandric\\.nuget\\packages\\": {}
+    "C:\\Users\\Jandra\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\IvanJandric\\Documents\\Dingg\\Dingg_Databuilder\\Dingg_Databuilder.csproj",
+      "projectUniqueName": "C:\\Users\\Jandra\\Documents\\Projects\\Dingg_Databuilder\\Dingg_Databuilder.csproj",
       "projectName": "Dingg_Databuilder",
-      "projectPath": "C:\\Users\\IvanJandric\\Documents\\Dingg\\Dingg_Databuilder\\Dingg_Databuilder.csproj",
-      "packagesPath": "C:\\Users\\IvanJandric\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\IvanJandric\\Documents\\Dingg\\Dingg_Databuilder\\obj\\",
+      "projectPath": "C:\\Users\\Jandra\\Documents\\Projects\\Dingg_Databuilder\\Dingg_Databuilder.csproj",
+      "packagesPath": "C:\\Users\\Jandra\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Jandra\\Documents\\Projects\\Dingg_Databuilder\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\IvanJandric\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Jandra\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {

@@ -7,7 +7,7 @@ using System.Linq;
 namespace Dingg_Databuilder.Extractors
 {
     /// <summary>
-    /// A generic CSV (with header) extractor. Extracts the data into an array of Model.
+    /// A generic CSV (with header and ; delimiter) extractor. Extracts the data into an array of Model.
     /// </summary>
     /// <typeparam name="Model">A CsvHelper model. The model should match the CSV header we are trying to parse.</typeparam>
     public class CSV<Model>
@@ -18,7 +18,7 @@ namespace Dingg_Databuilder.Extractors
         private string _path;
         
         /// <summary>
-        /// A generic CSV (with header) extractor. Extracts the data into an array of Model.
+        /// A generic CSV (with header and ; delimiter) extractor. Extracts the data into an array of Model.
         /// </summary>
         /// <param name="path">The path to the CSV file on the disk</param>
         public CSV(string path)
@@ -38,6 +38,7 @@ namespace Dingg_Databuilder.Extractors
             {
                 using (var csv = new CsvReader(reader, CultureInfo.InvariantCulture))
                 {
+                    csv.Configuration.Delimiter = ";";
                     csv.Configuration.PrepareHeaderForMatch = (string header, int idex) => header.ToLower();
                     return csv.GetRecords<Model>().ToArray();
                 }
