@@ -3695,11 +3695,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Jandra\\Documents\\Projects\\Dingg_Databuilder\\Dingg_Databuilder.csproj",
-      "projectName": "Dingg_Databuilder",
-      "projectPath": "C:\\Users\\Jandra\\Documents\\Projects\\Dingg_Databuilder\\Dingg_Databuilder.csproj",
+      "projectUniqueName": "C:\\Users\\Jandra\\Documents\\Projects\\Dingg\\Dingg.Databuilder\\Dingg.Databuilder.csproj",
+      "projectName": "Dingg.Databuilder",
+      "projectPath": "C:\\Users\\Jandra\\Documents\\Projects\\Dingg\\Dingg.Databuilder\\Dingg.Databuilder.csproj",
       "packagesPath": "C:\\Users\\Jandra\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Jandra\\Documents\\Projects\\Dingg_Databuilder\\obj\\",
+      "outputPath": "C:\\Users\\Jandra\\Documents\\Projects\\Dingg\\Dingg.Databuilder\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Jandra\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -3750,7 +3750,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
       }
     }
   }

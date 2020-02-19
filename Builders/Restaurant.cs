@@ -2,9 +2,9 @@
 using System;
 using System.Threading.Tasks;
 using Neo4j.Driver;
-using Dingg_Databuilder.Models;
+using Dingg.Databuilder.Models;
 
-namespace Dingg_Databuilder.Builders
+namespace Dingg.Databuilder.Builders
 {
     public static partial class Builder
     {

@@ -4,11 +4,11 @@ using System.IO;
 using System.Threading.Tasks;
 using CsvHelper;
 using Neo4j.Driver;
-using Dingg_Databuilder.Models;
-using Dingg_Databuilder.Extractors;
-using Dingg_Databuilder.Builders;
+using Dingg.Databuilder.Models;
+using Dingg.Databuilder.Extractors;
+using Dingg.Databuilder.Builders;
 
-namespace Dingg_Databuilder
+namespace Dingg.Databuilder
 {
     class Program
     {

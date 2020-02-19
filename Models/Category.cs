@@ -1,6 +1,6 @@
 using CsvHelper.Configuration.Attributes;
 
-namespace Dingg_Databuilder.Models
+namespace Dingg.Databuilder.Models
 {
     public class Category
     {

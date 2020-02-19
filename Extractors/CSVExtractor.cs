@@ -4,7 +4,7 @@ using System.IO;
 using CsvHelper;
 using System.Linq;
 
-namespace Dingg_Databuilder.Extractors
+namespace Dingg.Databuilder.Extractors
 {
     /// <summary>
     /// A generic CSV (with header and ; delimiter) extractor. Extracts the data into an array of Model.
